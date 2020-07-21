@@ -1,0 +1,1 @@
+<view><view><text>样式练习</text></view><view class="box" hover-class="box2"><text></text></view></view>

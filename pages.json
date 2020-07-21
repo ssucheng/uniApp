@@ -1,6 +1,18 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path":"pages/uni-style/uni-style",
+			"style":{
+				"navigationBarTitleText":"样式练习1"
+			}
+		},
+		{
+			"path":"pages/newlist/style",
+			"style":{
+				"navigationBarTitleText":"样式练习"
+			}
+		},
+		{
 			"path":"pages/message/new_file",
 			"style":{
 				"navigationBarTitleText":"信息页",

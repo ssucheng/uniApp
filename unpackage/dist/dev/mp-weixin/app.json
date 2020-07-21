@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/uni-style/uni-style",
+    "pages/newlist/style",
     "pages/message/new_file",
     "pages/index/index",
     "pages/newlist/new_file1"
@@ -29,6 +31,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap55.json"
+  "usingComponents": {}
 }
