@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/message/new_file",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/newlist/new_file1"
   ],
   "subPackages": [],
   "window": {
@@ -28,5 +29,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap55.json"
 }
