@@ -1,9 +1,10 @@
 {
   "pages": [
+    "pages/list/list",
+    "pages/index/index",
     "pages/uni-style/uni-style",
     "pages/newlist/style",
     "pages/message/new_file",
-    "pages/index/index",
     "pages/newlist/new_file1"
   ],
   "subPackages": [],

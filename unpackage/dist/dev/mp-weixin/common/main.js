@@ -97,6 +97,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   },
   onHide: function onHide() {
     console.log('App Hide');
+  },
+  onError: function onError(err) {
+    console.log(err);
   } };exports.default = _default;
 
 /***/ }),
