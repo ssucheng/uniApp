@@ -2,7 +2,7 @@
 	<view class="">
 		
 		<text>这是列表页</text>
-		<view v-for="(item,index) in data" :key=index>
+		<view v-for="(item,index) in data" :key=index class="box">
 			{{item}}
 		</view>
 	</view>
@@ -21,9 +21,17 @@
 			this.data = ["11","2222","3333"]
 			//解除刷新
 			uni.stopPullDownRefresh()
+		},
+		onReachBottom(){//页面触底的函数
+			console.log('页面触底了');
+			this.data = [...this.data,...this.data]
 		}
 	}
 </script>
 
-<style>
+<style lang="scss">
+	.box{
+		height: 300px;
+		line-height: 300px;
+	}
 </style>

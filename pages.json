@@ -3,7 +3,9 @@
 		{
 			"path": "pages/list/list",
 			"style": {
-				"navigationBarTitleText": "列表页"
+				"navigationBarTitleText": "列表页",
+				"enablePullDownRefresh":true,
+				"onReachBottomDistance":200 //触底默认为50 这里设置成200 就触发触底函数
 			}
 		}
 		,
@@ -49,7 +51,7 @@
 		"navigationBarTitleText": "uni-app",  //顶层标题
 		"navigationBarBackgroundColor": "#3F536E",  //顶层背景色
 		"backgroundColor": "#F8F8F8",
-		"enablePullDownRefresh":true //开启全局刷新
+		"enablePullDownRefresh":false //开启全局刷新
 	},
 	"tabBar":{   //下导航栏
 		"selectedColor":"#DD524D",   //点击之后的字体颜色
