@@ -17,6 +17,8 @@
 			}
 		},
 		onLoad(options) {
+			console.log(options)
+			//options 是可以接受到其他页面传递的参数  用onlaod的函数接受
 			console.log('页面加载了',options)
 		},
 		onShow(){

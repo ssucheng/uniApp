@@ -19,6 +19,9 @@
 
 <script>
 	export default{
+		onLoad(options){
+			console.log(options)
+		},
 		data(){
 			return {
 				data:["前端","后端","html","java"],

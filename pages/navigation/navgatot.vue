@@ -8,6 +8,7 @@
 		<button type="default" @click="btn1">api跳转</button>
 		<button type="default" @click="btn2">tabbar跳转</button>
 		<button type="default" @click="btn3">redirect跳转</button>
+		<button type="default" @click="btn4">跳转传参</button>
 	</view>
 </template>
 
@@ -39,6 +40,11 @@
 					uni.redirectTo({
 					    url: '/pages/list/list'
 					});
+				},
+				btn4(){
+					uni.navigateTo({
+						url:'/pages/list/list?id=30'
+					})
 				}
 			}
 		

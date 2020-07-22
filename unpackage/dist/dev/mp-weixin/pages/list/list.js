@@ -156,6 +156,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 var _default =
 {
+  onLoad: function onLoad(options) {
+    console.log(options);
+  },
   data: function data() {
     return {
       data: ["前端", "后端", "html", "java"],
