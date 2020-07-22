@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/photo/picture",
     "pages/list/list",
     "pages/index/index",
     "pages/uni-style/uni-style",
