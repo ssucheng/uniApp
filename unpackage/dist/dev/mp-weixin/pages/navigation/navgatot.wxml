@@ -1,0 +1,1 @@
+<view><navigator url="/pages/index/index" open-type="switchTab"><button type="default" data-event-opts="{{[['tap',[['btn',['$event']]]]]}}" bindtap="__e">跳转到index页面</button></navigator></view>

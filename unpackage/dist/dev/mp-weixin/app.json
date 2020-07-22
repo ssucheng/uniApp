@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/navigation/navgatot",
     "pages/ifdef/ifdef",
     "pages/photo/picture",
     "pages/list/list",
