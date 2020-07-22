@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/ifdef/ifdef",
     "pages/photo/picture",
     "pages/list/list",
     "pages/index/index",

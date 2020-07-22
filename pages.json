@@ -1,6 +1,15 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/ifdef/ifdef",
+			"style": {
+				"navigationBarTitleText": "组件条件注释",
+				"enablePullDownRefresh":true,
+				"onReachBottomDistance":50 //触底默认为50 这里设置成200 就触发触底函数
+			}
+		}
+		,
+		{
 			"path": "pages/photo/picture",
 			"style": {
 				"navigationBarTitleText": "上传图片",
