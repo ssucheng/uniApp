@@ -25,6 +25,17 @@
 		onReachBottom(){//页面触底的函数
 			console.log('页面触底了');
 			this.data = [...this.data,...this.data]
+			this.get()
+		},
+		methods:{
+			get(){
+				uni.request({
+					url:'http://localhost:8082/api/getlunbo',
+					success(res){
+						console.log(res);
+					}
+				})
+			}
 		}
 	}
 </script>
