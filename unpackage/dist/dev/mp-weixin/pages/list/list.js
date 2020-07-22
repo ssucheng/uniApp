@@ -135,7 +135,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;} //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -150,7 +158,8 @@ var _default =
 {
   data: function data() {
     return {
-      data: ["前端", "后端", "html", "java"] };
+      data: ["前端", "后端", "html", "java"],
+      id: '' };
 
   },
   onPullDownRefresh: function onPullDownRefresh() {
@@ -161,7 +170,7 @@ var _default =
   },
   onReachBottom: function onReachBottom() {//页面触底的函数
     console.log('页面触底了');
-    this.data = [].concat(_toConsumableArray(this.data), _toConsumableArray(this.data));
+    // this.data = [...this.data,...this.data]
     this.get();
   },
   methods: {
@@ -170,8 +179,56 @@ var _default =
         url: 'http://localhost:8082/api/getlunbo',
         success: function success(res) {
           console.log(res);
+
         } });
 
+    },
+    btn: function btn() {
+      var that = this;
+      uni.setStorage({ //异步的形式
+        key: 'id',
+        data: 10,
+        success: function success(res) {
+          console.log(res);
+          // console.log(that);
+        } });
+
+    },
+    btn1: function btn1() {var _this = this;
+      uni.getStorage({ //异步的形式
+        key: 'id',
+        success: function success(res) {
+          console.log(res);
+          console.log(_this); //this 指向vue实例
+          _this.id = res.data;
+        } });
+
+    },
+    btn3: function btn3() {
+      uni.setStorageSync('id', 100);
+      console.log('同步设置成功');
+    },
+    btn4: function btn4() {
+      var id = uni.getStorageSync('id');
+      console.log('同步获取成功');
+      this.id = id;
+
+    },
+    btn5: function btn5() {
+      var that = this;
+      uni.removeStorage({
+        key: 'id',
+        success: function success() {
+          console.log('删除成功');
+          that.id = '';
+        } });
+
+
+    },
+    btn6: function btn6() {
+      uni.removeStorageSync('id');
+      console.log('同步删除成功');
+      this.id = '';
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
