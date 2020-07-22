@@ -2,6 +2,8 @@
   "navigationBarTitleText": "uni-app",
   "usingComponents": {
     "sc-text": "/components/text",
-    "sc-text1": "/components/text1"
+    "sc-text1": "/components/text1",
+    "sc-a": "/components/a",
+    "sc-b": "/components/b"
   }
 }

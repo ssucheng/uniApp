@@ -8,8 +8,14 @@
 			<sc-text :title='msg'></sc-text>
 			
 		</view>
+		
 		<view class="">
 			<sc-text1 @myEvent="getSonData"></sc-text1>
+		</view>
+		<!-- 兄弟组件传值 -->
+		<view class="">
+			<sc-a></sc-a>
+			<sc-b></sc-b>
 		</view>
 	</view>
 </template>
@@ -17,10 +23,15 @@
 <script>
 	import text from '@/components/text.vue'
 	import text1 from '@/components/text1.vue'
+	import a from '@/components/a.vue'
+	import b from '@/components/b.vue'
+	
 	export default {
 	components:{
 		scText:text,
-		scText1:text1
+		scText1:text1,
+		scA:a,
+		scB:b
 	},
 		data() {
 			return {

@@ -130,7 +130,16 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var text = function text() {__webpack_require__.e(/*! require.ensure | components/text */ "components/text").then((function () {return resolve(__webpack_require__(/*! @/components/text.vue */ 75));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var text1 = function text1() {__webpack_require__.e(/*! require.ensure | components/text1 */ "components/text1").then((function () {return resolve(__webpack_require__(/*! @/components/text1.vue */ 86));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var text = function text() {__webpack_require__.e(/*! require.ensure | components/text */ "components/text").then((function () {return resolve(__webpack_require__(/*! @/components/text.vue */ 75));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var text1 = function text1() {__webpack_require__.e(/*! require.ensure | components/text1 */ "components/text1").then((function () {return resolve(__webpack_require__(/*! @/components/text1.vue */ 80));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var a = function a() {__webpack_require__.e(/*! require.ensure | components/a */ "components/a").then((function () {return resolve(__webpack_require__(/*! @/components/a.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var b = function b() {__webpack_require__.e(/*! require.ensure | components/b */ "components/b").then((function () {return resolve(__webpack_require__(/*! @/components/b.vue */ 96));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
 
 
 
@@ -152,7 +161,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   components: {
     scText: text,
-    scText1: text1 },
+    scText1: text1,
+    scA: a,
+    scB: b },
 
   data: function data() {
     return {
