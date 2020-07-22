@@ -4,12 +4,18 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 			<!-- <text>{{name}}</text> -->
+			<sc-text title='sucheng'></sc-text>
 		</view>
 	</view>
 </template>
 
 <script>
+	import text from '@/components/text.vue'
+	
 	export default {
+	components:{
+		scText:text
+	},
 		data() {
 			return {
 				title: 'Hello'

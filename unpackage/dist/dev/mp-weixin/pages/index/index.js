@@ -130,18 +130,24 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var text = function text() {__webpack_require__.e(/*! require.ensure | components/text */ "components/text").then((function () {return resolve(__webpack_require__(/*! @/components/text.vue */ 81));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    scText: text },
+
   data: function data() {
     return {
       title: 'Hello' };
