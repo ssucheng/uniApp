@@ -7,12 +7,15 @@
 		</navigator>
 		<button type="default" @click="btn1">api跳转</button>
 		<button type="default" @click="btn2">tabbar跳转</button>
+		<button type="default" @click="btn3">redirect跳转</button>
 	</view>
 </template>
 
 <script>
 	export default{
-		
+			onUnload(){
+				console.log('页面卸载了')
+			},
 			data(){
 				return{
 					
@@ -31,6 +34,11 @@
 					uni.switchTab({
 						url:'/pages/index/index' //跳转tabbar页面
 					})
+				},
+				btn3(){
+					uni.redirectTo({
+					    url: '/pages/list/list'
+					});
 				}
 			}
 		

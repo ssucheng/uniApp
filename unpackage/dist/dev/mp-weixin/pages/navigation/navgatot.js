@@ -140,9 +140,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
-
+  onUnload: function onUnload() {
+    console.log('页面卸载了');
+  },
   data: function data() {
     return {};
 
@@ -161,6 +164,11 @@ var _default =
       uni.switchTab({
         url: '/pages/index/index' //跳转tabbar页面
       });
+    },
+    btn3: function btn3() {
+      uni.redirectTo({
+        url: '/pages/list/list' });
+
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
