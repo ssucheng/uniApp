@@ -153,9 +153,11 @@ var _default =
         } });
 
     },
-    click1: function click1(count) {
+    click1: function click1(current) {
+      console.log(current);
+      console.log(this.data);
       uni.previewImage({
-        count: count,
+        current: current,
         urls: this.data });
 
     } } };exports.default = _default;

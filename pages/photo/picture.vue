@@ -23,9 +23,11 @@
 					}
 				})
 			},
-			click1(count){
+			click1(current){
+				console.log(current);
+				console.log(this.data)
 				uni.previewImage({
-					count,
+					current,
 					urls:this.data
 				})
 			}
