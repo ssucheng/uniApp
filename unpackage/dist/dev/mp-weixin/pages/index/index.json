@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "uni-app",
   "usingComponents": {
+    "uni-calendar": "/components/uni-calendar/uni-calendar",
     "sc-text": "/components/text",
     "sc-text1": "/components/text1",
     "sc-a": "/components/a",

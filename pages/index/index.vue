@@ -17,6 +17,15 @@
 			<sc-a></sc-a>
 			<sc-b></sc-b>
 		</view>
+		<view>
+		    <uni-calendar 
+		    :insert="true"
+		    :lunar="true" 
+		    :start-date="'2019-3-2'"
+		    :end-date="'2019-5-20'"
+		    @change="change"
+		     />
+		</view>
 	</view>
 </template>
 
@@ -25,13 +34,15 @@
 	import text1 from '@/components/text1.vue'
 	import a from '@/components/a.vue'
 	import b from '@/components/b.vue'
+	import uniCalendar from '@/components/uni-calendar/uni-calendar.vue'
 	
 	export default {
 	components:{
 		scText:text,
 		scText1:text1,
 		scA:a,
-		scB:b
+		scB:b,
+		uniCalendar
 	},
 		data() {
 			return {
@@ -55,6 +66,9 @@
 		methods: {
 			getSonData(res){
 				console.log(res)
+			},
+			change(e){
+				console.log(e)
 			}
 		}
 	}
