@@ -5,20 +5,27 @@
 			<text class="title">{{title}}</text>
 			<!-- <text>{{name}}</text> -->
 			<sc-text title='sucheng'></sc-text>
+			<sc-text :title='msg'></sc-text>
+			
+		</view>
+		<view class="">
+			<sc-text1 @myEvent="getSonData"></sc-text1>
 		</view>
 	</view>
 </template>
 
 <script>
 	import text from '@/components/text.vue'
-	
+	import text1 from '@/components/text1.vue'
 	export default {
 	components:{
-		scText:text
+		scText:text,
+		scText1:text1
 	},
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				msg:'hello'
 				
 			}
 		},
@@ -35,7 +42,9 @@
 			
 		},
 		methods: {
-
+			getSonData(res){
+				console.log(res)
+			}
 		}
 	}
 </script>
