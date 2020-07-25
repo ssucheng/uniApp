@@ -1,1 +1,0 @@
-<view><button type="default">{{'这是b组件 '+num+''}}</button></view>

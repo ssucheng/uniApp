@@ -1,1 +1,0 @@
-<view><view>{{text+''}}<text selectable="true">我是可选文本</text></view><view><text space="ensp">来了 老弟</text></view><view><text space="emsp">来了 老弟</text></view><view><text space="nbsp">来了 老弟</text></view><view><text decode="true">> & '</text></view></view>

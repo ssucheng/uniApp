@@ -1,1 +1,0 @@
-<view><button type="primary" data-event-opts="{{[['tap',[['choose',['$event']]]]]}}" bindtap="__e">上传图片</button><view><block wx:for="{{data}}" wx:for-item="item" wx:for-index="index" wx:key="index"><image src="{{item}}" mode data-event-opts="{{[['tap',[['click1',['$0'],[[['data','',index]]]]]]]}}" bindtap="__e"></image></block></view></view>
